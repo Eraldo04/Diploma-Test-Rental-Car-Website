@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montagu Slab", serif;
+    background: linear-gradient(180deg, white, rgb(223, 213, 213));
+}
+
+
+/*        Video Background        */
+
+.vid-body {
+    background-color: black;
+}
+
+.videoo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.videoo video {
+    width: 100%;
+    height: 100%;
+}
+
+.text-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 800;
+    mix-blend-mode: multiply;
+}
+
+
+/*         Main page           */
+
+.logo {
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.chart-img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 56, 51);
+}
+
+.top-container {
+    background: linear-gradient(180deg, sandybrown, rgb(187, 83, 45));
+}
+
+.top-container walp {
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu-photo {
+    width: 25px;
+    margin-left: 22px;
+    opacity: 0;
+}
+
+.walp {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    padding-left: 50px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding-right: 55px 0;
+}
+
+.col-2 h1 {
+    font-size: 60px;
+    line-height: 75px;
+    margin: 30px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: orangered;
+    color: palegreen;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    background: rgb(61, 60, 60);
+}
+
+.categories {
+    margin: 100px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 150px;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    transition: transform 0.5s;
+}
+
+.col-3:hover {
+    transform: translateY(-10px);
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.chartBtn {
+    border: 1px solid whitesmoke;
+    font-size: large;
+    color: rgb(181, 233, 203);
+    background: rgb(255, 104, 49);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8%;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+
+.chartBtn:hover {
+    background: rgb(230, 62, 0);
+    color: whitesmoke;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/* Makinat */
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin: 50px 0;
+    transition: transform 0.5s;
+}
+
+.col-4:hover {
+    transform: translateY(-8px);
+}
+
+.col-4 img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4-3;
+}
+
+.mak {
+    text-align: center;
+}
+
+
+/*   Komentet    */
+
+.comments {
+    padding-top: 100px;
+}
+
+.comments .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px black;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.comments .col-3 img {
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.comments .col-3:hover {
+    transform: translateY(-8px);
+}
+
+.maps {
+    height: 100%;
+}
+
+.col {
+    margin: 25px auto;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.col-sponsor {
+    display: inline-block;
+    flex-basis: 33%;
+    margin: 20px auto;
+    padding: 20px;
+    width: 150px;
+    transition: transform 0.5s;
+}
+
+.col-sponsor img {
+    width: 100%;
+}
+
+.col-sponsor:hover {
+    transform: translateY(-5px);
+}
+
+
+/* footer */
+
+.footer {
+    background: transparent;
+    margin: auto;
+    font-size: 13px;
+    padding: 50px 0 20px;
+    background: linear-gradient(180deg, sandybrown, rgb(187, 83, 45));
+}
+
+.footer-col1,
+.footer-col2 {
+    min-width: 300px;
+}
+
+.footer-col1 {
+    flex-basis: 50%;
+}
+
+.footer-col2 {
+    display: inline-block;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+ul {
+    list-style: none;
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    padding-left: 35%;
+}
+
+.scrollTop {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    background: transparent;
+    width: 50px;
+    height: 35px;
+    border-radius: 8%;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.scrollTop:hover {
+    background: linear-gradient(180deg, wheat, darkgray);
+}
+
+
+/* Contact Form */
+
+.modal-btn {
+    display: inline-block;
+    background: sandybrown;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    background-color: rgb(221, 209, 209);
+    color: orangered;
+    width: 90%;
+    padding: 35px 80px;
+    max-width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal input,
+.modal textarea {
+    border: 1;
+    border-color: orangered;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.modal button {
+    display: inline-block;
+    background: orangered;
+    color: palegreen;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: orangered;
+}
+
+.view {
+    max-height: 20px;
+}
+
+
+/*  Shporta  */
+
+.single-chart {
+    margin-top: 80px;
+}
+
+.single-chart .col-2 {
+    padding: 25px;
+}
+
+.single-chart h2 {
+    margin-top: 20px;
+}
+
+.single-chart h4 {
+    margin: 10px;
+    font-size: medium;
+}
+
+.single-chart select {
+    width: 100px;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: darkslategray;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.single-chart input {
+    width: 50px;
+    height: 35px;
+    padding: 5px 8px;
+    margin-left: 10px;
+}
+
+.single-chart a {
+    margin-left: 10px;
+}
+
+.small-walp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img {
+    flex-basis: 32%;
+    cursor: pointer;
+}
+
+
+/* Porosite e Kartes  */
+
+.shopping-page {
+    margin: 80px auto;
+}
+
+.shopping-page h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: darkred;
+}
+
+.shopping-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shopping-info img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    max-width: 20%;
+    max-height: 10%;
+}
+
+.shopping-text {
+    margin: 30px 15px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: linear-gradient(180deg, sandybrown, rgb(187, 83, 45));
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: sandybrown;
+    padding: 10px;
+}
+
+td a:hover {
+    color: rgb(80, 37, 1);
+}
+
+.shop-btn {
+    width: 55px;
+    height: 32px;
+    border: 1px solid orangered;
+    border-radius: 15%;
+    color: sandybrown;
+    cursor: pointer;
+}
+
+.shop-btn:hover {
+    background: sandybrown;
+    color: white;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 2px solid orangered;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: transparent;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: black;
+    }
+    .menu-photo {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .image-container {
+        max-width: 100%;
+    }
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 80%;
+    }
+    .single-chart .walp {
+        text-align: left;
+    }
+    .single-chart .col-2 {
+        padding: 20px 0;
+    }
+}
